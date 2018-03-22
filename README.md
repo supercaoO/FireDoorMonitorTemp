@@ -5,20 +5,20 @@
 
 本程序需要给main函数传入14个参数，参数要求如下
 
- # @param argv[1] 图片所在文件夹路径（如./camera1/）
- # @param argc[2] 图片后缀名（如.jpg）
- # @param argc[3] 亮度检测方法阈值
- # @param argc[4] 点数检测方法阈值
- # @param argc[5] 1920×1080分辨率下，消防门左上角的X坐标
- # @param argc[6] 1920×1080分辨率下，消防门左上角的Y坐标
- # @param argc[7] 1920×1080分辨率下，消防门右上角的X坐标
- # @param argc[8] 1920×1080分辨率下，消防门右上角的Y坐标
- # @param argc[9] 1920×1080分辨率下，消防门左下角的X坐标
- # @param argc[10] 1920×1080分辨率下，消防门左下角的Y坐标
- # @param argc[11] 1920×1080分辨率下，消防门右下角的X坐标
- # @param argc[12] 1920×1080分辨率下，消防门右下角的Y坐标
- # @param argc[13] 图片文件名起始索引
- # @param argc[14] 图片文件吗结束索引
+ // @param argv[1] 图片所在文件夹路径（如./camera1/）
+ // @param argc[2] 图片后缀名（如.jpg）
+ // @param argc[3] 亮度检测方法阈值
+ // @param argc[4] 点数检测方法阈值
+ // @param argc[5] 1920×1080分辨率下，消防门左上角的X坐标
+ // @param argc[6] 1920×1080分辨率下，消防门左上角的Y坐标
+ // @param argc[7] 1920×1080分辨率下，消防门右上角的X坐标
+ // @param argc[8] 1920×1080分辨率下，消防门右上角的Y坐标
+ // @param argc[9] 1920×1080分辨率下，消防门左下角的X坐标
+ // @param argc[10] 1920×1080分辨率下，消防门左下角的Y坐标
+ // @param argc[11] 1920×1080分辨率下，消防门右下角的X坐标
+ // @param argc[12] 1920×1080分辨率下，消防门右下角的Y坐标
+ // @param argc[13] 图片文件名起始索引
+ // @param argc[14] 图片文件吗结束索引
 
 例如，本项目文件同级目录下有一个camera1文件夹，里面存有同一摄像头拍摄的一组图片，若要检测该组图片，可设置参数如下：
 ./camera1/ .jpg 20.0 0.65 632 144 1307 144 657 966 1278 966 1 4
@@ -37,8 +37,7 @@ main函数参数传递的两个基本方法：
 		2）输入FireDoorMonitor.exe所在目录的盘符，如e:（冒号不可省略），按下回车；
 		3）输入cd XXX\XXX\XXX，这里的XXX\XXX\XXX即为FireDoorMonitor.exe所在目录去掉盘符后的路径，如消防门\FireDoorMonitor-Project\FireDoorMonitor\Debug，按下回车；
 		4）输入FireDoorMonitor.exe X X X ...，这里的X即为需要传入的14个参数，如FireDoorMonitor.exe ./camera1/ .jpg 20.0 0.65 632 144 1307 144 657 966 1278 966 1 4，按下回车；
-
-	2、采用Visual Studio，具体步骤为
+	2、采用Visual Studio，具体步骤
 		1）打开本工程
-		2）点击菜单栏的项目-->属性-->配置属性-->调试;
+		2）点击菜单栏的项目-->属性-->配置属性-->调试；
 		3）在命令参数右边文本编辑框输入X X X ...，如./camera1/ .jpg 20.0 0.65 632 144 1307 144 657 966 1278 966 1 4
